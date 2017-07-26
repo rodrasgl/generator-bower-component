@@ -29,26 +29,23 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    var i,
-      files = ['.eslintrc', 'bower.json', 'gulpfile.js', 'package.json', 'README.md', 'version.txt', 'config', 'npm-gulp-tasks', 'scss', 'src', 'test'];
-
+    var files = ['.eslintrc', 'bower.json', 'gulpfile.js', 'package.json', 'README.md', 'version.txt', 'config', 'npm-gulp-tasks', 'scss', 'src', 'test'];
+    var i;
     for (i = 0; i < files.length; i++) {
       this.fs.copyTpl(
         this.templatePath(files[i]),
         this.destinationPath(files[i]),
-        { data: this.props }
+        {data: this.props}
       );
     }
     this.fs.copy(
       this.templatePath('_gitignore'),
       this.destinationPath('.gitignore')
     );
-
-
   }
 
   install() {
-    // this.npmInstall();
+    // This.npmInstall();
     this.runInstall('bower');
   }
 };
