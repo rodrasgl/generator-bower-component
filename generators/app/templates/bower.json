@@ -1,0 +1,22 @@
+{
+  "name": "<%=data.component_name %>",
+  "description": "<%=data.component_name %> bower dependencies",
+  "main": "src/index.html",
+  "authors": [
+    "<% if (!data.author) %><%= data.author.toLowerCase() %>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "angular-mocks": "1.6.4",
+    "malihu-custom-scrollbar-plugin": "3.1.5"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "Rodrigo Gómez Luque",
+      "authorEmail": "rogolu90@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
