@@ -14,6 +14,8 @@ Then generate your new project:
 
 ```bash
 yo bower-component
+```
+
 
 ## License
 
