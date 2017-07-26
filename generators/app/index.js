@@ -35,7 +35,7 @@ module.exports = class extends Generator {
       this.fs.copyTpl(
         this.templatePath(files[i]),
         this.destinationPath(files[i]),
-        {data: this.props}
+        { data: this.props }
       );
     }
     this.fs.copy(
@@ -45,7 +45,7 @@ module.exports = class extends Generator {
   }
 
   install() {
-    // This.npmInstall();
+    this.npmInstall();
     this.runInstall('bower');
   }
 };
